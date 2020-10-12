@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="sun.js"></script>
+	<style type="text/css">
+		#settings {
+			float:left;
+		}
+		
+		
+		#val_1, #val_2, #val_3, #val_4, #val_5 {
+			margin-left: 220px;
+		}
+		
+		#content {
+			margin-left: 350px;
+		}
+		
+		#result {
+			padding-top: 2em;
+			clear: both;
+		}
+		
+		#result textarea {
+			font-size: 50%;
+		}
+
+	</style>
+	<title>SZ Sun</title>
+</head>
+<body>
+
+<h1>Sluníčko SZ</h1>
+
+<ul>
+	<li>Funguje jen v dobrých prohlížečích: <a href="http://www.mozilla.com/en-US/firefox/">Firefox</a>, 
+		<a href="http://www.opera.com/">Opera</a>, <a href="http://www.apple.com/safari/">Safari</a>
+	<li>Sluníčko <strong>není</strong> obrázek, takže si ho nelze stáhnout</li>
+	<li>Sluníčko <strong>je</strong> SVG, takže si lze níže generovaný kód pomocí schránky uložit do .svg souboru</li>
+</ul>
+
+<div id="settings">
+
+	Velikost
+	<div id="slider_1"></div><div id="val_1"></div>
+
+	Poměr středu ku paprskům
+	<div id="slider_2"></div><div id="val_2"></div>
+
+	Vycpávka
+	<div id="slider_3"></div><div id="val_3"></div>
+
+	Šířka paprsku
+	<div id="slider_4"></div><div id="val_4"></div>
+
+	Natočení
+	<div id="slider_5"></div><div id="val_5"></div>
+</div>
+
+<div id="content"></div>
+
+<div id="result">
+	<textarea rows="30" cols="60" id="result_ta"></textarea>
+</div>
+
+<script>init()</script>
+
+</body>
+</html>
